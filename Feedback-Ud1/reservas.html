@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Estilo de navegador*/
+        .enlaces{
+            list-style: none;
+            display: inline-block;
+            padding: 0;
+            
+        }
+        .enlaces li{
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .enlaces li:last-child{
+            margin-right: 0;
+        }
+        /*Fin estilo de navegador*/
+        /*Estilo formulario*/
+        .formulario{
+            width: fit-content;
+            margin: auto;
+        }
+        .formulario form{
+            display: grid;
+        }
+        .formulario form input{
+            margin-bottom: 10px;
+        }
+        /*Fin estilo formulario*/
+
+    </style>
+</head>
+<body>
+    <!--Header Página-->
+    <h1 align="center">Restaurante Michael</h1>
+        <div class = "navegador" align="center">
+            <ul class="enlaces">
+                <li><a href="index.html">Presentación</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </div>
+        <hr>
+    <!--Formulario Reservas-->
+    <div class="formulario" align="center">
+        <form>
+            <div class="row">
+                <label for="">Nombre: </label>
+                <input type="text" placeholder="" name="name">
+            </div>
+            <div class="row">
+                <label for="">N. Tarjeta: </label>
+                <input type="text" placeholder="" name="numbCard">
+            </div>
+            <div class="row">
+                <label for="">Fecha: </label>
+                <input type="date" placeholder="First Name" name="date">
+            </div>
+            <div class="row">
+                <label for="">Aviso: </label>
+                <textarea name="first" placeholder="..." id="" cols="20" rows="3"></textarea>
+            </div>
+            <div class="row">
+                <label for="">Parking: </label>
+                <input type="checkbox" name="parking">
+            </div>
+            <div class="row">
+                <label for="">Zona: </label>
+                <label for="">Terraza</label>
+                <input type="radio" name="Zona" value="Terraza">
+                <label for="">Salón</label>
+                <input type="radio" name="Zona" value="Salon">
+            </div>
+        <input type="submit">
+    </div>
+    </form>
+</body>
+</html>

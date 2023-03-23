@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael's Restaurant - Menu</title>
+    <style>
+        /*Estilo de navegador*/
+        .enlaces{
+            list-style: none;
+            display: inline-block;
+            padding: 0;
+            
+        }
+        .enlaces li{
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .enlaces li:last-child{
+            margin-right: 0;
+        }
+        /*Fin estilo de navegador*/
+        /*Estilo tabla*/
+        table{
+            border-collapse: collapse;
+            border-style:double;
+        }
+        table caption{
+            border-bottom: none;
+            border-style: double;
+            border-bottom: none;
+        }
+        table td{
+            border-bottom-style: double;
+        }
+        .MainColumn{
+            border-right-style:double;
+        }
+        /*Fin estilo tabla*/
+
+    </style>
+</head>
+<body>
+    <!--Header Página-->
+    <h1 align="center">Restaurante Michael</h1>
+        <div class = "navegador" align="center">
+            <ul class="enlaces">
+                <li><a href="index.html">Presentación</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </div>
+        <hr>
+    <!--Contenido Página-->
+    <div align="center">
+        <table>
+            <caption><strong>MENU</strong></caption>
+            <tbody>
+                <tr>
+                    <td class="MainColumn">Primeros</td>
+                    <td>
+                        <ul>
+                            <li>sopas</li>
+                            <li>ensaladas</li>
+                            <li>pasta</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="MainColumn">Segundos</td>
+                    <td>
+                        <ul>
+                            <li>carnes</li>
+                            <li>pescados</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="MainColumn">Postres</td>
+                    <td>
+                        <ul>
+                            <li>sopas</li>
+                            <li>ensaladas</li>
+                            <li>pasta</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
